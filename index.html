@@ -474,10 +474,16 @@
     for(let i = 0; i < celulas.length-1; i++)
     {     
         const elemento = celulas[i];
+        elemento.addEventListener("click", classeAtual, false);
         if(elemento.className == "")
         {
           elemento.classList.add("parede");
         }
+    }
+    function classeAtual(event)
+    {
+        let target = event.target;
+        console.log(target.className);
     }
   </script>
 </body>
