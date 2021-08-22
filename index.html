@@ -471,9 +471,13 @@
   </table>
   <script>
     const celulas = document.querySelectorAll("td");
-    for(let i = 0; i < celulas.length; i++)
-    {
-        celulas[i].classList.add("parede");
+    for(let i = 0; i < celulas.length-1; i++)
+    {     
+        const elemento = celulas[i];
+        if(elemento.className == "")
+        {
+          elemento.classList.add("parede");
+        }
     }
   </script>
 </body>
