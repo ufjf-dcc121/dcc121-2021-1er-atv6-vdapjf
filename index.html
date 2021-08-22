@@ -483,6 +483,7 @@
     function trocaClasseAtual(event)
     {
         let target = event.target;
+        console.log("Classe anterior: " +target.className);
         switch(target.className)
         {
           case "parede":
@@ -503,15 +504,7 @@
             target.innerText = "";
             break;
         }
-        if(target.className == "")
-        {
-          console.log("célula vazia");
-        } 
-        else
-        {
-          console.log(target.className);
-        }
-          
+        console.log("Classe atual: " +target.className);
       }
   </script>
 </body>
